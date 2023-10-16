@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pavanam&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="cardapio.css">
+  <link rel="stylesheet" href="historia.css">
+  <link rel="stylesheet" href="reserva.css">
+  <link rel="stylesheet" href="modalCardapio.css">
+  <title>Ramem Kitchen</title>
+</head>
+<body>
+  <div class="main">
+    <div class="imagemBack">
+      <div class="logo">
+        <p class="text-logo1">Ramem</p>
+        <p class="text-logo2">Konoha</p>
+      </div>
+       <div class="btnArea11">
+          <a href="home.html"><button class="btn">Home</button></a>
+          <a href="cardápio.html"><button class="btn">Menu</button></a>
+          <a href="reserva.html"><button class="btn">Reservas</button></a>
+          <a href="historia.html"><button class="btn">História</button></a>
+       </div>
+    </div>
+    <div class="reservas">
+      <div>
+        <p class="paraUp2">Garanta seu lugar no Ramem Konoha,  onde sushi excepcional e uma experiência gastronômica notável o aguardam.</p>
+      </div>
+      <div class="reserva-top">
+        
+        <div class="mesa1" onclick="abrirModal001()">
+          <p class="paraUp3">Mesa lounge. R$ 75.00</p>
+          <p class="paraUp3">2 ou 4 lugares</p>
+          <img src="reserva/mesa.png"  alt="mesa1" class="mesa-img" id="mesa0001">
+        </div>
+        <div class="mesa2" onclick="abrirModal001()">
+          <p class="paraUp3">Mesa lounge. R$ 75.00</p>
+          <p class="paraUp3">2 ou 4 lugares</p>
+          <img src="reserva/mesa.png"  alt="" class="mesa-img" >
+        </div>
+        <div class="mesa3" onclick="abrirModal001()">
+          <p class="paraUp3">Mesa lounge. R$ 75.00</p>
+          <p class="paraUp3">2 ou 4 lugares</p>
+          <img src="reserva/mesa.png" alt="" class="mesa-img">
+        </div>
+      </div>
+      <div class="reserva-mid">
+        <div class="mesa1" onclick="abrirModal001()">
+          <p class="paraUp3">Mesa Bar. R$ 50.00</p>
+          <p class="paraUp3">2 ou 4 lugares</p>
+          <img src="reserva/mesa.png" alt="" class="mesa-img">
+        </div>
+        <div class="mesa2" onclick="abrirModal001()">
+          <p class="paraUp3">Mesa Bar. R$ 50.00</p>
+          <p class="paraUp3">2 ou 4 lugares</p>
+          <img src="reserva/mesa.png" alt="" class="mesa-img">
+        </div>
+        <div class="mesa3" onclick="abrirModal001()">
+          <p class="paraUp3">Mesa Bar. R$ 50.00</p>
+          <p class="paraUp3">2 ou 4 lugares</p>
+          <img src="reserva/mesa.png" alt="" class="mesa-img">
+        </div>
+      </div>
+      <div class="reserva-bot">
+        <div class="mesa1" onclick="abrirModal001()">
+          <p class="paraUp3">Mesa Palco. R$ 30.00</p>
+          <p class="paraUp3">2 ou 4 lugares</p>
+          <img src="reserva/mesa.png" alt="" class="mesa-img">
+        </div>
+        <div class="mesa2" onclick="abrirModal001()">
+          <p class="paraUp3">Mesa Palco. R$ 30.00</p>
+          <p class="paraUp3">2 ou 4 lugares</p>
+          <img src="reserva/mesa.png" alt="" class="mesa-img">
+        </div>
+        <div class="mesa3" onclick="abrirModal001()">
+          <p class="paraUp3">Mesa palco. R$ 30.00</p>
+          <p class="paraUp3">2 ou 4 lugares</p>
+          <img src="reserva/mesa.png" alt="" class="mesa-img">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CSS <div class="janela-modal1" id="janela-modal1"> 
+    <div class="modal1">
+      <button class="fechar" id="fechar">⊗</button>
+      <p class="paraUp">MAKI DE ATUM PICANTE..........................................R$ 15.00</p>
+      <p class="para">Uma tentadora mistura de atum picante, pepino e abacate, harmoniosamente enrolada em nori e arroz temperado.</p>
+    </div> -->
+<!-- 
+     JS function abrirModal1(){
+      const modal = document.getElementById('janela-modal1')
+      modal.classList.add('abrir')
+    
+      modal.addEventListener('click', (e) => {
+        if(e.target.id == 'fechar' || e.target.id == 'janela-modal1'){
+          modal.classList.remove('abrir')
+        }
+      }) -->
+      <div class="janela-modal001" id="janela-modal001">
+        <div class="modal001">
+          <button class="fechar" id="fechar">⊗</button>
+          <form>
+            <p class="paraUp2">Preencha os campos Abaixo.</p>
+            <label for="fname">Nome:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Sobrenome:</label><br>
+            <input type="text" id="lname" name="lname">
+            <p class="paraUp2">Forma de Pagamento</p>
+            <input type="radio" id="html" name="fav_language" value="HTML">
+            <label for="html">Pix</label><br>
+            <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="css">Cartão de Crédito</label><br>
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+            <label for="javascript">Débito</label>
+            <br>
+            <br>
+            <label for="cpf">Digite seu CPF</label>
+            <input type="text" name="cpf" \pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" \
+			      title="Digite um CPF no formato: xxx.xxx.xxx-xx">
+		        
+            
+          </form>
+          <br>
+          <br>
+          <button class="btn">Finalizar</button>
+        </div>
+      </div>
+<!-- 
+      function mesa001(){
+        const modal = document.getElementById('janela-modal-pag')
+        modal.classList.add('abrir')
+      
+        modal.addEventListener('click', (e) => {
+          if(e.target.id == 'fechar' || e.target.id == 'janela-modal-pag'){
+            modal.classList.remove('abrir')
+          }
+        })
+      } -->
+
+
+  
+     <script src="index.js"></script>
+  
+</body>
+</html>
